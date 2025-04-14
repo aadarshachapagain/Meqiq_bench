@@ -52,7 +52,10 @@ def main():
     num_processed = 0
     correct_history, timeout_history, turn_lengths = [], [], []
 
-    for pid, sample in patient_data.items():
+    for i, (pid, sample) in enumerate(patient_data.items()):
+        if args.num_patients is not None and i >= args.num_patients:
+            break
+
         if pid in processed_ids:
             print(f"Skipping patient {pid} as it has already been processed.")
             correct_history.append(processed_ids[pid]["correct"])
