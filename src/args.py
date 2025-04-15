@@ -11,6 +11,7 @@ def get_args():
     parser.add_argument('--patient_module', type=str, default='patient', help='file name where the patient class is implemented.')
     parser.add_argument('--patient_class', type=str, required=True, help='Patient class name to use for the benchmark.')
     parser.add_argument('--patient_model', type=str, default='cdlacey/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo-5307b20c', help='Patient model name to use for the benchmark, can be a local model or a Huggingface model.')
+    parser.add_argument('--num_patients', type=int, default=None, help='Number of patients to evaluate (optional)')
     
     parser.add_argument('--data_dir', type=str, required=True, help='Directory containing the development data files.')
     parser.add_argument('--dev_filename', type=str, required=True, help='Filename for development data.')
