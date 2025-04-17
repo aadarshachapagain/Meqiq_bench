@@ -63,10 +63,10 @@ python mediQ_benchmark.py  --expert_module expert --expert_class FixedExpert \
 
 By using the following LLM and parameters, the expected outcome should align these results:
 
--   Meta-LLAMA 3.1 as the engine for both patient system and expert system
--   Ran benchmark model for 1272 patients 
--   Max 30 questions asked to gather information required to make decisions
--   Accuracy 731 patients were successfully diagnosed out of 1272 patients (0.5747)
+-   Meta-LLAMA 3.1 as the engine for both patient system and expert system
+-   Ran benchmark model for 1272 patients
+-   Max 30 questions asked to gather information required to make decisions
+-   Accuracy 731 patients were successfully diagnosed out of 1272 patients (0.5747)
 -   Timeout Rate of 1.0 and Avg Turn of 31 with a confidence level of 4.0 (scale threshold, or 0.8 for the abstrain threshold)
 
 ## Project Adaptation: Integration of Meta-Llama-3.1 into MediQ Framework
